@@ -35,6 +35,6 @@ public interface IConnectionArguments
 /// <param name="CancellationToken">Cancellation token object</param>
 public record ConnectionArguments(
     string? SessionToken = null,
-    string Address = "ws://localhost:4560",
+    string Address = "ws://127.0.0.1:6341",
     string HandshakeVersion = "1.0",
     CancellationToken? CancellationToken = null) : IConnectionArguments;
